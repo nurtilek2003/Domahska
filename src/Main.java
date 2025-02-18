@@ -4,7 +4,7 @@ import java.util.Scanner;
 // click the <icon src="A Icons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog("laika", "blak");
+        Dog dog = new Dog("laika", "blak");  //////
         Dog dog1 = new Dog(5);
         System.out.println(dog.name + " " + dog.color + " " + dog1.age);
 
