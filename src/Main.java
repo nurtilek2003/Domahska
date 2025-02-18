@@ -4,67 +4,54 @@ import java.util.Scanner;
 // click the <icon src="A Icons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Scanner scanner1 = new Scanner(System.in);
-        Dog dog1;
-        Dog dog2 ;
-        Dog dog3 ;
-        Dog dog4 ;
+        Dog dog = new Dog("laika", "blak");
+        Dog dog1 = new Dog(5);
+        System.out.println(dog.name + " " + dog.color + " " + dog1.age);
+
+        System.out.println();
+        Cat cat = new Cat(4);
+        Cat cat1 = new Cat("Kisai", "blak");
+        System.out.println(cat1.name + " " + cat1.color + " " + cat.age);
+
+        System.out.println();
+
+        Car car = new Car("BMB", "x5");
+        Car car1 = new Car(3, 20000);
+        System.out.println(car.model + " " + car.name + " " + car1.obem + " " + car1.price);
+
+        System.out.println();
+        School school = new School("Algebra", "Baiel");
+        System.out.println(school.lesson + " " + school.student);
 
 
-        do {
-            do {
-                System.out.print("ittin atyn jaz:");
-                String name =scanner.nextLine();
-                System.out.print("ittin color jaz:");
-                String color =scanner.nextLine();
-                System.out.print("ittin age jaz:");
-                int age =scanner1.nextInt();
-                dog1=new Dog();
-                dog1.name=name;
-                dog1.age=age;
-                dog1.color=color;
-                System.out.println();
+        System.out.println();
+        Fon fon = new Fon("Aifon", "Ultra");
+        Fon fon1 = new Fon(100000);
+        System.out.println(fon.model + " " + fon.camera + " " + fon1.money);
 
-            }while (false);
-            do {
-                System.out.print("ittin atyn jaz:");
-                String name =scanner.nextLine();
-                System.out.print("ittin color jaz:");
-                String color =scanner.nextLine();
-                System.out.print("ittin age jaz:");
-                int age =scanner1.nextInt();
-                dog2=new Dog(name,color,age);
-                System.out.println();
-            }while (false);
-            do {
-                System.out.print("ittin atyn jaz:");
-                String name =scanner.nextLine();
-                System.out.print("ittin color jaz:");
-                String color =scanner.nextLine();
-                System.out.print("ittin age jaz:");
-                int age =scanner1.nextInt();
-                dog3=new Dog(age,name,color);
-                System.out.println();
-            }while (false);
-            do {
-                System.out.print("ittin atyn jaz:");
-                String name =scanner.nextLine();
-                System.out.print("ittin color jaz:");
-                String color =scanner.nextLine();
-                System.out.print("ittin age jaz:");
-                int age =scanner1.nextInt();
-                dog4=new Dog(name,age,color);
-                System.out.println();
-            }while (false);
-            System.out.println(dog1);
-            System.out.println(dog2);
-            System.out.println(dog3);
-            System.out.println(dog4);
+        System.out.println();
+        Laptop laptop=new Laptop("Windos");
+        Laptop laptop1=new Laptop(12);
+        System.out.println(laptop.model+" "+laptop1.age);
 
-        }while (false);
-        }
+        System.out.println();
+        Muzsik muzsik=new Muzsik("DO","max");
+        System.out.println(muzsik.nota+" "+muzsik.sound);
+
+        System.out.println();
+        Ufc ufc=new Ufc("Junusbek","Sanjar");
+        Ufc ufc1=new Ufc(5);
+        System.out.println(ufc.fighters+" "+ufc.trainer+" "+ufc1.round);
+
+        System.out.println();
+        Fcb fcb=new Fcb("Elaman"," Barcalona");
+        Fcb fcb1= new Fcb(43);
+        System.out.println(fcb.ball+" "+fcb.football+" "+fcb1.age);
+
+        System.out.println();
+        Food food=new Food("ak cuu", "suu bashy","suluktu");
+        System.out.println(food.ace+" "+food.marking+" "+food.potato);
+
 
     }
-
-
+}
